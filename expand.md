@@ -1,0 +1,19 @@
+# Expand Questions
+
+1) Why is it important to put thought into your IDs & Classes when it comes to technology intersections? (e.g. how HTML, CSS, and JS intersect)
+    It's important to put thought into IDs and Classes when it comes to intersections of HTML, CSS, and JS because all 3 use various selectors that utilize them. Its important to use clear and concise names that provide information which make developing and reading code over easier. Additionally using them purposefully helps prevent errors when trying to stylize specific elements and also selecting elements for any JS code. An abuse of too many classes and IDs can clutter up code and make it harder for developers and lead to potential mistakes.
+
+2) What are Data attributes? Why might they be useful? How do you access them? What are the implications of using Data attributes when it comes to things like microdata?
+    Data attributes are additional properties you can change for HTML elements. They are helpful because for some elements like images or links you can add the assets that connect to them or you can change things such as size or styling of elements. You can access them in JS via various element selectors and then accessing the specific attribute and editing the value in that way. Microdata focuses on things that help search engines but data attributes help the users interact with the website so in that way they focus on the two aspects where one focuses on search engines and the other is client side focused.
+
+3) What is a DOM fragment? Why are they powerful?
+    A DOM fragment is a separate DOM node object that is separate from the main DOM. They are powerful because it allows you to add elements in isolation without affecting the main DOM unless you combine them. For example you can add child elements of more list items but it won't reflect in the main DOM directly until you code it to do so. Similar to how we work on branches with Git to avoid changing main, we can do the same thing with DOM fragments.
+
+4) What is the point of a “Virtual DOM”? What do you gain? What do you lose?
+    A Virtual DOM is where you have an in-memory representation of the actual DOM. This allows you to re render certain aspects of the main DOM instead of having to re render the entire DOM to improve performance and reduces the lag in the UI. However you lose the ability to directly affect the main DOM and can cause issues when updating between the virtual and main DOM.
+
+5) In JavaScript, usually you can reference every attribute of an element with a dot selector followed by the attribute name, except for the class attribute, which is className. Why is this so?
+    This is because the class keyword is reserved in JavaScript and is used instead to define classes in JavaScript. So since we use the keyword to declare classes, we can't also use it to reference the class attribute of an element.
+
+6) What is the difference between using addEventListener() and something like onClick() ? What are the advantages / disadvantages of both?
+    Using addEventListener attaches an event handler to the element while onClick simply executes specific code when the element is clicked. The advantages of addEventListener are that it doesn't overwrite other event handlers and there can be multiple and the advantage of onCLick is it can be added as an HTML attribute. The disadvantages to addEventListener is that it might not work in all browsers and requires some form of script. The disadvantages of onClick are that there can only be one property attached to it at a time and thus has to be overwritten for any changes and it does not have event propagation.
